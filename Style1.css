@@ -1,0 +1,96 @@
+ *
+ {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ nav
+ {
+    height: 80px;
+    background-color:rgb(0, 157, 255) ;
+    display:flex;
+    justify-content:space-between ;
+    align-items:center;
+    padding: 0rcm calc((100vw-1300px)/2);
+ }
+ .logo
+ {
+    color:black;
+    font-size:1.5rem;
+    font-weight:bold;
+    font-style: italic;
+    padding:0.2rem;
+ }
+ nav a {
+text-decoration:none;
+background-color: #000;
+padding:0 1.5 rem;
+ }
+ .hero
+ {
+    background-color:rgb(0, 157, 255);
+ }
+ .hero-container
+ {
+    display:grid;
+    grid-template-columns: ifr ifr;
+    height:95vh;
+    padding:3 rem calc((100vw-1300px)/2);
+
+ }
+ .column-left
+ {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex start;
+    color:#000;
+    padding:1rem 2rem;
+ }
+ .column-left h1
+ {
+    margin-bottum: 1rem;
+    font-size: 3rem;
+ }
+ .column-left p
+ {
+    margin-bottum: 3rem;
+    font-size:1.5rem;
+    line-height:1.5;
+ }
+button
+{
+padding : 1 rem 2rem;
+font-size:1rem;
+border:none;
+color:rgb(0, 157, 255);
+background-color:none;
+cursor:poiter;
+border-radius: 50%;
+}
+button:hover
+{
+background-color:white;
+color:black;
+}
+.column-right
+{
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 0rem 2rem;
+}
+.hero-image
+{
+    height: 250;
+    width: 400;
+}
+@media screen  and(max-width: 768px){
+    hero-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+    
+}
